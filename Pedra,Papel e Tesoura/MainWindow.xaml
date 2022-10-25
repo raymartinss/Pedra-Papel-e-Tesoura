@@ -1,0 +1,27 @@
+﻿<Window x:Class="Pedra_Papel_e_Tesoura.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pedra_Papel_e_Tesoura"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <Grid x:Name="txtPlacarPC" Margin="0,157,0,0">
+        <TextBlock x:Name="txtPlacarVoce" HorizontalAlignment="Left" Height="53" Margin="230,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="34" FontSize="48"><Run Language="pt-br" Text="0"/></TextBlock>
+        <TextBlock x:Name="txtPlacarComputador" HorizontalAlignment="Left" Height="54" Margin="570,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="27" FontSize="48"><Run Language="pt-br" Text="0"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="197,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" FontSize="36"><Run Language="pt-br" Text=" "/><Run Text="Você"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="562,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" FontSize="36"><Run Language="pt-br" Text="PC"/></TextBlock>
+        <Button x:Name="btnPapel" Content="Papel" HorizontalAlignment="Left" Height="54" Margin="192,339,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click" FontSize="24"/>
+        <Button x:Name="btnPedra" Content="Pedra" HorizontalAlignment="Left" Height="54" Margin="354,254,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_1" FontSize="24"/>
+        <Button x:Name="btnTesoura" Content="Tesoura" HorizontalAlignment="Left" Height="54" Margin="529,339,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_2" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="387,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" FontSize="36" RenderTransformOrigin="-3.361,3.775"><Run Language="pt-br" Text="VS"/></TextBlock>
+        <TextBlock x:Name="txtPlacar" HorizontalAlignment="Left" Height="161" Margin="250,-136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="358" FontSize="36"><Run Text="Jogador"/><Run Language="pt-br" Text=" Vencedor"/></TextBlock>
+        <Image x:Name="imgPapel" HorizontalAlignment="Left" Height="139" Margin="210,74,0,0" VerticalAlignment="Top" Width="156" Source="/papel.PNG" Visibility="Hidden"/>
+        <Image x:Name="imgPedra" HorizontalAlignment="Left" Height="139" Margin="210,74,0,0" VerticalAlignment="Top" Width="156" Source="/pedra.PNG" Visibility="Hidden"/>
+        <Image x:Name="imgPapel2" HorizontalAlignment="Left" Height="139" Margin="496,73,0,0" VerticalAlignment="Top" Width="156" Source="/papel.PNG" Visibility="Hidden"/>
+        <Image x:Name="imgTesoura2" HorizontalAlignment="Left" Height="139" Margin="496,73,0,0" VerticalAlignment="Top" Width="156" Source="/tesoura.PNG" Visibility="Hidden"/>
+        <Image x:Name="imgTesoura" HorizontalAlignment="Left" Height="139" Margin="210,74,0,0" VerticalAlignment="Top" Width="156" Source="/tesoura.PNG" Visibility="Hidden"/>
+        <Image x:Name="imgPedra2" HorizontalAlignment="Left" Height="139" Margin="496,73,0,0" VerticalAlignment="Top" Width="156" Source="/pedra.PNG" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
